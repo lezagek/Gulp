@@ -1,0 +1,180 @@
+body {
+  display: flex;
+  background: #164b69;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  flex-direction: column;
+  padding: 2vw;
+  font-size: 14px;
+  font-family: arial;
+}
+body .centralBlock {
+  width: 50%;
+  min-height: 700px;
+  min-width: 100px;
+  padding: 2vw;
+  margin: 2vw;
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+}
+body .centralBlock .menuFlex {
+  padding: 10px/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .centralBlock .menuFlex span {
+  background-color: #808080;
+  padding: 5px;
+}
+body .centralBlock .menuFlex .menuItem a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+body .centralBlock .menuFlex .menuItem a:hover {
+  background-color: #808080;
+  padding: 5px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.textBlock {
+  padding: 10px/2;
+  margin: 10px/2;
+}
+.textBlock .imageBlock {
+  padding: 10px;
+  float: right;
+  width: 40%;
+  overflow: hidden;
+}
+.textBlock p {
+  line-height: 2;
+  margin: 1vw;
+  text-align: justify;
+  text-indent: 2vw;
+  word-spacing: 0.5em;
+}
+.textFlex .textBlock {
+  padding: 10px/2;
+  margin: 10px/2;
+  width: 50%;
+}
+.videoBlock {
+  padding: 10px;
+  margin: 10px/2;
+  vertical-align: middle;
+}
+.videoBlock video {
+  width: 60%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.imagesFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 1vw;
+}
+.imagesFlexItem {
+  padding: 1vh;
+  overflow: hidden;
+}
+.textFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  body {
+    background-color: #164b69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    flex-direction: column;
+    font-size: 12px;
+    font-family: arial;
+  }
+  body .centralBlock {
+    width: 100%;
+    padding: 2vw;
+    margin: 2vw;
+    background-color: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .centralBlock .menuFlex {
+    display: flex-inline;
+    width: 40%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 600px) {
+  .textBlock {
+    padding: 10px/2;
+    margin: 10px/2;
+  }
+  .textBlock .imageBlock {
+    margin: 10px;
+    float: none;
+    margin: auto;
+    width: 50%;
+  }
+  .textBlock .imageBlock p {
+    line-height: 2;
+    margin: 10px;
+    text-align: justify;
+    word-spacing: 1px;
+  }
+}
+@media (max-width: 600px) {
+  .videoBlock {
+    padding: 10px;
+    margin: 10px/2;
+    vertical-align: middle;
+  }
+  .videoBlock video {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .imagesFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .imagesFlexItem {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .textFlex {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+  }
+  .textFlex .textBlock {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+}
